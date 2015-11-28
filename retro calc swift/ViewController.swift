@@ -97,8 +97,6 @@ class ViewController: UIViewController {
                 } else if currentOperation == Operation.Add {
                     result = "\(Double(rightValStr)! + Double(leftValStr)!)"
                     
-                 //   result = "\(Double(leftValStr)! + Double(rightValStr)!)"
-
                 }
                 
                 leftValStr = result
@@ -115,12 +113,12 @@ class ViewController: UIViewController {
     }
     
     func playSound(){
-        //
-        //        if btnSound.playing {
-        //            btnSound.stop()
-        //        }
-        //        
-        //        btnSound.play()
+        
+        if btnSound.playing {
+            btnSound.stop()
+        }
+        
+        btnSound.play()
     }
     
 }
